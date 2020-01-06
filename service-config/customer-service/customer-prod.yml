@@ -1,6 +1,19 @@
+#server:
+ # port: 9191
+
+# here by adding port as 0 , when multiple instances are up from this serive those instances will be picked a random port number.
 server:
-  port: 9191
+  port: 0
+
+#Below properties will enable this service to try for register with an eureka server.
   
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+
+#If our eureka server is not run in default host(localhost) and port (8761) we have to add another properties here with eureka server details.	
+
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/rentdb_customer?createDatabaseIfNotExist=true
