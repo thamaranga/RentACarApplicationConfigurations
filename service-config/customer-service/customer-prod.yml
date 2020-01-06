@@ -11,9 +11,6 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
-
-#Below property will give an dynamic id for each instance of this service.	
-
   instance:
     instance-id: ${spring.application.name}-${random.int}
     hostname: localhost	
