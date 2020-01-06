@@ -11,11 +11,15 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
+
+#Below property will give an dynamic id for each instance of this service.	
+
   instance:
     instance-id: ${spring.application.name}-${random.int}
-    hostname: localhost
+    hostname: localhost	
 	
-#Below property will give an dynamic id for each instance of this service.	
+
+	
 
 
 #If our eureka server is not run in default host(localhost) and port (8761) we have to add another properties here with eureka server details.	
