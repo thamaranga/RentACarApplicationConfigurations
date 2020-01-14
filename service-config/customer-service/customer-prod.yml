@@ -8,10 +8,10 @@
   #Below properties will enable this service to try for register with an eureka server.
   #Below instance properties will generate dynamic ids for each instances of this service.
 
-#eureka:
-#  client:
-#    register-with-eureka: true
-#    fetch-registry: true
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
 #  instance:
 #    instance-id: ${spring.application.name}-${random.int}
 
