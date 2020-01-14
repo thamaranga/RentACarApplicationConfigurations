@@ -2,18 +2,18 @@
   # port: 9191
 
 # here by adding port as 0 , when multiple instances are up from this serive those instances will be picked a random port number.
-server:
-  port: 0
+#server:
+#  port: 0
 
   #Below properties will enable this service to try for register with an eureka server.
   #Below instance properties will generate dynamic ids for each instances of this service.
 
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-  instance:
-    instance-id: ${spring.application.name}-${random.int}
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#  instance:
+#    instance-id: ${spring.application.name}-${random.int}
 
 
 
