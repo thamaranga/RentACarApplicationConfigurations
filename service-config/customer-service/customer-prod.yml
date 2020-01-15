@@ -6,7 +6,7 @@ server:
   port: 0
 
   #Below properties will enable this service to try for register with an eureka server.
-  #Below instance properties will generate dynamic ids for each instances of this service.
+  #Below instance properties will generate dynamic ids for each instances of this service(Then eureka server can uniquely identify each instance).
 
 eureka:
   client:
