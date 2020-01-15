@@ -1,9 +1,7 @@
 server:
   port: 9193
 
-# here by adding port as 0 , when multiple instances are up from this serive those instances will be picked a random port number.
-#server:
-#  port: 0
+
 
   #Below properties will enable this service to try for register with an eureka server.
   #Below instance properties will generate dynamic ids for each instances of this service.
@@ -23,7 +21,7 @@ eureka:
 
 
 
-#If our eureka server is not run in default host(localhost) and port (8761) we have to add another properties here with eureka server details.
+
 
 spring:
   datasource:
