@@ -1,5 +1,5 @@
-  #server:
-  # port: 9191
+server:
+  port: 9191
 
 # here by adding port as 0 , when multiple instances are up from this serive those instances will be picked a random port number.
 #server:
@@ -36,4 +36,3 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       ddl-auto: none
-
