@@ -1,5 +1,5 @@
-  #server:
-  # port: 9191
+server:
+  port: 9193
 
 # here by adding port as 0 , when multiple instances are up from this serive those instances will be picked a random port number.
 #server:

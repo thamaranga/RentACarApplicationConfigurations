@@ -17,8 +17,7 @@ eureka:
   instance:
     hostname: localhost
     instance-id: ${spring.application.name}-${random.int}
-#  instance:
-#    instance-id: ${spring.application.name}-${random.int}
+
 
 
 
