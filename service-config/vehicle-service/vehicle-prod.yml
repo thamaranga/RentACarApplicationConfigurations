@@ -5,8 +5,10 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
-#  instance:
-#    instance-id: ${spring.application.name}-${random.int}
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
   
 spring:
   datasource:
@@ -17,5 +19,6 @@ spring:
   jpa:
     hibernate:
       naming:
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl  
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: none 
 
