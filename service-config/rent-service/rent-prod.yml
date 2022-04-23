@@ -34,3 +34,5 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       ddl-auto: none
+  zipkin:
+    base-url: http://127.0.0.1:9411/
