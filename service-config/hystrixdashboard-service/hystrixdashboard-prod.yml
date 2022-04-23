@@ -13,4 +13,6 @@ eureka:
     hostname: localhost
     instance-id: ${spring.application.name}-${random.int}
 
-
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "*"
