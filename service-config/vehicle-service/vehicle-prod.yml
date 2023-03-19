@@ -17,12 +17,12 @@ spring:
     url: jdbc:mysql://localhost:3306/rentdb_vehicle?createDatabaseIfNotExist=true
     username: root
     password: root123
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-      ddl-auto: none
+      ddl-auto: update
   zipkin:
     base-url: http://127.0.0.1:9411/
 
